@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkPass - Bui National Park</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kakum.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 id="name">ParkPass</h2>
+            <p id="message">Preserving Nature, Inspiring Adventure</p>
+            <nav id="navigation" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="guidelines.html">Visitor Guide</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button id="sign-in-btn">
+                <i class="fas fa-user-circle" style="font-size: 24px; color: #e3e3e3;"></i>
+            </button>
+        </header>
+        <main id="main">
+            <h3>Bui National Park</h3>
+            <div class="park-info">
+                <div class="slider" role="region" aria-label="Park Image Slider">
+                    <div class="slides" id="slides">
+                        <div class="slide"><img src="/Pictures/Bui-National-Park2.jpg" alt="River cruise at Bui National Park"></div>
+                        <div class="slide"><img src="/Pictures/Bui-National-Park-Ghana-TortoisePath.com-7.jpeg" alt="Hippos in Bui National Park"></div>
+                        <div class="slide"><img src="/Pictures/Bui-National-Park-Ghana-TortoisePath.com-2.jpeg" alt="Escarpments at Bui National Park"></div>
+                    </div>
+                    <div class="slider-buttons">
+                        <button onclick="plusSlides(-1)" aria-label="Previous Slide">❮</button>
+                        <button onclick="plusSlides(1)" aria-label="Next Slide">❯</button>
+                    </div>
+                </div>
+                <p>
+                    Bui National Park, located in Ghana’s Brong-Ahafo Region, is a scenic reserve established in 1971 along the Black Volta River. 
+                    It’s renowned for its hippo-filled river cruises and stunning escarpments, offering a blend of aquatic and terrestrial biodiversity.
+                </p>
+                <h4>Main Details</h4>
+                <ul id="main-details">
+                    <li><strong>Size:</strong> 1821 km²</li>
+                    <li><strong>Ecosystem:</strong> Savannah and Riverine Forest</li>
+                    <li><strong>Wildlife Highlights:</strong> Hippos, crocodiles, antelopes, and various bird species</li>
+                    <li><strong>Famous For:</strong> River cruises and the Bui Dam</li>
+                </ul>
+                <h4>Wildlife Highlights</h4>
+                <ul>
+                    <li>Hippos (significant population along the Black Volta)</li>
+                    <li>Crocodiles and water chevrotain</li>
+                    <li>Antelopes and buffalo</li>
+                    <li>Over 200 bird species including fish eagles</li>
+                </ul>
+                <h4>Activities</h4>
+                <ul>
+                    <li>River cruises and boat tours</li>
+                    <li>Game viewing and birdwatching</li>
+                    <li>Fishing (with permits)</li>
+                    <li>Hiking along escarpments</li>
+                </ul>
+                <h4>Location</h4>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5!2d-2.25!3d8.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBui+National+Park!5e0!3m2!1sen!2sgh!4v1624567890!5m2!1sen!2sgh" allowfullscreen="" loading="lazy" aria-label="Map of Bui National Park"></iframe>
+            </div>
+        </main>
+    </div>
+    <script src="kakum.js"></script>
+</body>
+</html>

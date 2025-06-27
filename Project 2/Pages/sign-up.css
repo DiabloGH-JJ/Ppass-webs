@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1.5s ease-in-out;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url('/Pictures/david-clode-ZmXbvj08h7I-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(26, 42, 68, 0.7));
+    z-index: -1;
+}
+
+.signup-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.signup-container h2 {
+    color: #ff6f61;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    color: #e0e0e0;
+    font-size: 0.9em;
+    text-align: left;
+    margin-left: 5px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+input::placeholder {
+    color: #d3d3d3;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff6f61, #ff8c61);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+p {
+    margin-top: 15px;
+    color: #e0e0e0;
+    font-size: 0.9em;
+}
+
+p a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+p a:hover {
+    color: #ffca28;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .signup-container h2 {
+        font-size: 1.5em;
+    }
+}

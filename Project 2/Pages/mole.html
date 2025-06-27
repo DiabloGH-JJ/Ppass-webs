@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkPass - Mole National Park</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kakum.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 id="name">ParkPass</h2>
+            <p id="message">Preserving Nature, Inspiring Adventure</p>
+            <nav id="navigation" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="guidelines.html">Visitor Guide</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button id="sign-in-btn">
+                <i class="fas fa-user-circle" style="font-size: 24px; color: #e3e3e3;"></i>
+            </button>
+        </header>
+        <main id="main">
+            <h3>Mole National Park</h3>
+            <div class="park-info">
+                <div class="slider" role="region" aria-label="Park Image Slider">
+                    <div class="slides" id="slides">
+                        <div class="slide"><img src="/Pictures/three-elephants-crossing-road-ghana.jpg" alt="Elephants at Mole National Park"></div>
+                        <div class="slide"><img src="/Pictures/394136729_e42acc370d_b.jpg" alt="Savannah landscape"></div>
+                        <div class="slide"><img src="/Pictures/group-visiting-larabanga-mosque-ghana.jpg" alt="Wildlife safari"></div>
+                    </div>
+                    <div class="slider-buttons">
+                        <button onclick="plusSlides(-1)" aria-label="Previous Slide">❮</button>
+                        <button onclick="plusSlides(1)" aria-label="Next Slide">❯</button>
+                    </div>
+                </div>
+                <p>
+                    Mole National Park, Ghana’s largest wildlife refuge, spans the Northern Region and was established in 1958. 
+                    It’s famous for its elephant safaris and vast savannah landscapes, hosting a rich diversity of fauna.
+                </p>
+                <h4>Main Details</h4>
+                <ul id="main-details">
+                    <li><strong>Size:</strong> 4840 km²</li>
+                    <li><strong>Ecosystem:</strong> Guinea Savannah</li>
+                    <li><strong>Wildlife Highlights:</strong> Elephants, lions, leopards, and over 300 bird species</li>
+                    <li><strong>Famous For:</strong> Elephant safaris and observation points</li>
+                </ul>
+                <h4>Wildlife Highlights</h4>
+                <ul>
+                    <li>Elephants (large herds)</li>
+                    <li>Lions, leopards, and hyenas</li>
+                    <li>Antelopes and baboons</li>
+                    <li>Over 300 bird species including vultures</li>
+                </ul>
+                <h4>Activities</h4>
+                <ul>
+                    <li>Guided safaris and walking tours</li>
+                    <li>Birdwatching from observation points</li>
+                    <li>Camping and night drives</li>
+                    <li>Photography tours</li>
+                </ul>
+                <h4>Fun Facts</h4>
+                <ul class="fun-facts">
+                    <li>It’s Ghana’s largest national park at 4,840 km²!</li>
+                    <li>Home to over 90 mammal species.</li>
+                    <li>Established in 1958, it’s the oldest park in Ghana.</li>
+                </ul>
+                <a href="https://www.viator.com/Mole-National-Park/d51965-ttd"><button class="book-btn">Book Your Tour</button></a>                
+                <h4>Location</h4>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5!2d-1.85!3d9.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMole+National+Park!5e0!3m2!1sen!2sgh!4v1624567890!5m2!1sen!2sgh" allowfullscreen="" loading="lazy" aria-label="Map of Mole National Park"></iframe>
+            </div>
+        </main>
+    </div>
+    <script src="kakum.js"></script>
+</body>
+</html>

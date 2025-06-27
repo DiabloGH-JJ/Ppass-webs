@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkPass - Kakum National Park</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="kakum.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 id="name">ParkPass</h2>
+            <p id="message">Preserving Nature, Inspiring Adventure</p>
+            <nav id="navigation" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="guidelines.html">Visitor Guide</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button id="sign-in-btn">
+                <i class="fas fa-user-circle" style="font-size: 24px; color: #e3e3e3;"></i>
+            </button>
+        </header>
+        <main id="main">
+            <h3>Kakum National Park</h3>
+            <div class="park-info">
+                <div class="slider" role="region" aria-label="Park Image Slider">
+                    <div class="slides" id="slides">
+                        <div class="slide"><img src="/Pictures/kakum-canopy-walkway-bridges.jpg" alt="Canopy Walkway at Kakum National Park"><figcaption>View from the Canopy Walkway</figcaption></div>
+                        <div class="slide"><img src="/Pictures/2028_DSC09427.jpg" alt="Forest Elephants in Kakum National Park"><figcaption>Animal artworks</figcaption></div>
+                        <div class="slide"><img src="/Pictures/912251B1-87F0-4528-BB52-C3BC596B5764-jpeg.webp" alt="Artwork of animals in Kakum National Park"><figcaption>A person completing the Canopy Walk</figcaption></div>
+                        <div class="slide"><img src="/Pictures/Kakum-0.webp" alt="Entrance to Kakum National Park"><figcaption>Entrance to the Park</figcaption></div>
+                        <div class="slide"><img src="/Pictures/DSC01337-2-1024x683.webp" alt="Canopy Walkway view at Kakum National Park"><figcaption>Canopy Walkway</figcaption></div>
+                    </div>
+                    <div class="slider-buttons">
+                        <button onclick="plusSlides(-1)" aria-label="Previous Slide">❮</button>
+                        <button onclick="plusSlides(1)" aria-label="Next Slide">❯</button>
+                    </div>
+                </div>
+                <p>
+                    Located in Ghana’s Central Region, Kakum National Park is a lush tropical rainforest reserve established in 1992. 
+                    Originally a forest reserve in 1931, it gained fame for its iconic <strong>Canopy Walkway</strong>—a 350-meter-long suspended bridge system connecting treetops, giving visitors a unique aerial view of the forest ecosystem.
+                </p>
+                <h4>Main Details</h4>
+                <ul id="main-details">
+                    <li><strong>Size:</strong> 375 km²</li>
+                    <li><strong>Ecosystem:</strong> Dense Tropical Rainforest</li>
+                    <li><strong>Wildlife Highlights:</strong> Forest elephants, Diana monkeys, Bongo antelope, and over 300 bird species</li>
+                    <li><strong>Famous For:</strong> The Canopy Walkway—a 350-meter-long suspended bridge system connecting 7 treetops, offering a bird's-eye view of the forest</li>
+                </ul>
+                <h4>Wildlife Highlights</h4>
+                <ul>
+                    <li>Forest elephants (densest population in Ghana)</li>
+                    <li>Diana monkeys, yellow-backed duikers, Bongo antelope</li>
+                    <li>Over 300 bird species including hornbills and the endangered white-breasted guineafowl</li>
+                    <li>600+ butterfly species, with a new species discovered in 1993</li>
+                </ul>
+                <h4>Activities</h4>
+                <ul>
+                    <li>Guided forest walks (day and night)</li>
+                    <li>Medicinal plant tours</li>
+                    <li>Birdwatching and butterfly spotting</li>
+                    <li>Cultural performances and treehouse overnight stays</li>
+                </ul>
+                <h4>Fun Facts</h4>
+                <ul class="fun-facts">
+                    <li>It’s one of only three places in Africa with a canopy walkway!</li>
+                    <li>A new butterfly species was discovered here in 1993.</li>
+                    <li>The park was created through local initiative, not the state wildlife department.</li>
+                </ul>
+                <a href="https://www.viator.com/searchResults/all?text=Kakum%20national%20park"><button class="book-btn">Book Your Tour</button></a>
+                <h4>Location</h4>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63691.21952449581!2d-1.4183017060871278!3d5.343596199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf7e0f5e5e5e5e5%3A0x1234567890abcdef!2sKakum+National+Park!5e0!3m2!1sen!2sgh!4v1624567890!5m2!1sen!2sgh" allowfullscreen="" loading="lazy" aria-label="Map of Kakum National Park"></iframe>
+                <script src="kakum.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkPass - Shai Resource Reserve</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kakum.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 id="name">ParkPass</h2>
+            <p id="message">Preserving Nature, Inspiring Adventure</p>
+            <nav id="navigation" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="guidelines.html">Visitor Guide</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button id="sign-in-btn">
+                <i class="fas fa-user-circle" style="font-size: 24px; color: #e3e3e3;"></i>
+            </button>
+        </header>
+        <main id="main">
+            <h3>Shai Resource Reserve</h3>
+            <div class="park-info">
+                <div class="slider" role="region" aria-label="Park Image Slider">
+                    <div class="slides" id="slides">
+                        <div class="slide"><img src="/Pictures/shai-hills-resource-reserve.webp" alt="Hills at Shai Resource Reserve"></div>
+                        <div class="slide"><img src="/Pictures/Shai-Hills-Resource-Reserve-14.webp" alt="Wildlife at Shai"></div>
+                        <div class="slide"><img src="/Pictures/20210822_2116506000655283275375460.jpg" alt="Safari drive"></div>
+                    </div>
+                    <div class="slider-buttons">
+                        <button onclick="plusSlides(-1)" aria-label="Previous Slide">❮</button>
+                        <button onclick="plusSlides(1)" aria-label="Next Slide">❯</button>
+                    </div>
+                </div>
+                <p>
+                    Shai Resource Reserve, in Ghana’s Greater Accra Region, is a scenic park established in 1962. 
+                    It features rolling hills and diverse wildlife, ideal for safari drives.
+                </p>
+                <h4>Main Details</h4>
+                <ul id="main-details">
+                    <li><strong>Size:</strong> 47 km²</li>
+                    <li><strong>Ecosystem:</strong> Savannah and Woodland</li>
+                    <li><strong>Wildlife Highlights:</strong> Kob antelopes, monkeys, and birds</li>
+                    <li><strong>Famous For:</strong> Rolling hills and safari drives</li>
+                </ul>
+                <h4>Wildlife Highlights</h4>
+                <ul>
+                    <li>Kob antelopes and monkeys</li>
+                    <li>Various bird species</li>
+                    <li>Small mammals like hares</li>
+                    <li>Rich grassland flora</li>
+                </ul>
+                <h4>Activities</h4>
+                <ul>
+                    <li>Safari drives</li>
+                    <li>Guided walks</li>
+                    <li>Birdwatching</li>
+                    <li>Picnicking</li>
+                </ul>
+                <h4>Fun Facts</h4>
+                <ul class="fun-facts">
+                    <li>It features ancient caves used by the Shai people!</li>
+                    <li>Established in 1962 as a game production reserve.</li>
+                    <li>Home to over 150 bird species.</li>
+                </ul>
+                <a href="https://www.viator.com/tours/Accra/Half-Day-Accra-Safari-Hike-and-Animals-View/d5517-376189P5"><button class="book-btn">Book Your Tour</button></a>
+                <h4>Location</h4>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5!2d0.05!3d5.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sShai+Resource+Reserve!5e0!3m2!1sen!2sgh!4v1624567890!5m2!1sen!2sgh" allowfullscreen="" loading="lazy" aria-label="Map of Shai Resource Reserve"></iframe>
+            </div>
+        </main>
+    </div>
+    <script src="kakum.js"></script>
+</body>
+</html>

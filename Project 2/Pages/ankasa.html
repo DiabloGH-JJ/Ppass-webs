@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkPass - Ankasa Park</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kakum.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 id="name">ParkPass</h2>
+            <p id="message">Preserving Nature, Inspiring Adventure</p>
+            <nav id="navigation" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="guidelines.html">Visitor Guide</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button id="sign-in-btn">
+                <i class="fas fa-user-circle" style="font-size: 24px; color: #e3e3e3;"></i>
+            </button>
+        </header>
+        <main id="main">
+            <h3>Ankasa Park</h3>
+            <div class="park-info">
+                <div class="slider" role="region" aria-label="Park Image Slider">
+                    <div class="slides" id="slides">
+                        <div class="slide"><img src="/Pictures/ankasa.webp" alt="Rainforest at Ankasa Park"></div>
+                        <div class="slide"><img src="/Pictures/Environment-Ankasa-Conservation-.webp" alt="Butterflies in Ankasa"></div>
+                        <div class="slide"><img src="/Pictures/ghana-resort-ankasa-02.jpg" alt="Birds in Ankasa"></div>
+                    </div>
+                    <div class="slider-buttons">
+                        <button onclick="plusSlides(-1)" aria-label="Previous Slide">❮</button>
+                        <button onclick="plusSlides(1)" aria-label="Next Slide">❯</button>
+                    </div>
+                </div>
+                <p>
+                    Ankasa Park, in Ghana’s Western Region, is a biodiversity hotspot established in 1976. 
+                    It’s celebrated for its rich variety of plants, butterflies, and bird species within a dense rainforest.
+                </p>
+                <h4>Main Details</h4>
+                <ul id="main-details">
+                    <li><strong>Size:</strong> 509 km²</li>
+                    <li><strong>Ecosystem:</strong> Tropical Rainforest</li>
+                    <li><strong>Wildlife Highlights:</strong> Monkeys, birds, and numerous butterfly species</li>
+                    <li><strong>Famous For:</strong> Butterfly and bird diversity</li>
+                </ul>
+                <h4>Wildlife Highlights</h4>
+                <ul>
+                    <li>Various monkey species</li>
+                    <li>Over 200 bird species</li>
+                    <li>600+ butterfly species</li>
+                    <li>Diverse plant life</li>
+                </ul>
+                <h4>Activities</h4>
+                <ul>
+                    <li>Guided forest walks</li>
+                    <li>Birdwatching and butterfly tours</li>
+                    <li>Plant identification tours</li>
+                    <li>Photography expeditions</li>
+                </ul>
+                <ul class="fun-facts">
+                    <li>It’s one of Ghana’s wettest parks with over 1,800 mm of rain annually!</li>
+                    <li>Home to the rare bongo antelope.</li>
+                    <li>Established in 1976 as a conservation area.</li>
+                </ul>
+                <a href="https://www.booking.com/attractions/en-gb/pr61zsod5vng-guiding-tours-in-ghanawest-africa.en-gb.html?hl_ids[]=PR61Zsod5vNG&hl_ids[]=&aid=1703766&label=English_ROW_Product_176544054678-IitYeInPggMngjq78zIqyQS735362057956%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg&gad_source=1&date=2025-06-27&start_time=00%3A00&ticket_type=OFAc1FH0FPop"><button class="book-btn">Book Your Tour</button></a>                
+                <h4>Location</h4>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5!2d-2.65!3d5.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAnkasa+Park!5e0!3m2!1sen!2sgh!4v1624567890!5m2!1sen!2sgh" allowfullscreen="" loading="lazy" aria-label="Map of Ankasa Park"></iframe>
+            </div>
+        </main>
+    </div>
+    <script src="kakum.js"></script>
+</body>
+</html>
